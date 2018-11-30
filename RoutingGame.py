@@ -114,16 +114,47 @@ def make_file(n, rand_seed):
             f.write("\n\n\n")
 
 
+def routing_tables(routers):
+    tables = {}
+    for r in routers:
+        tables[r] = {x:(None, float('inf')) for x in routers}
+        tables[r][r] = (None, 0)
+        for n in r.connections:
+            tables[r][n] = (n, r.connections[n])
+    changed = True
+    while changed:
+        changed = False
+        for r in routers:
+            for n in r.connections:
+                wt = r.connections[n]
+                for dest in tables[n]:
+                    poss_wt = wt + tables[n][dest][1]
+                    if poss_wt < tables[r][dest][1]:
+                        tables[r][dest] = (n, poss_wt)
+                        changed = True
+    return tables
+
+
+def display_table(tables, r):
+    table = tables[r]
+    out = f"{r.name}'s Routing Table:\n"
+    for x in routers:
+        if r == x: continue
+        out += f"   Packets for {x.name} should be forwarded to {table[x][0].name}, path weight = {table[x][1]}\n"
+    print(out)
+
 if __name__ == "__main__":
     rand_seed = 1
     # rand_seed = 2
     # for n in range(15,21):
-    n = 16
+    n = 15
     make_file(n, rand_seed)
     routers = randomize_routers(n, rand_seed)
+    tables = routing_tables(routers)
+    display_table(tables, routers[5])
     # for i in range(len(routers)):
     #     print(f"{i:2}) {routers[i]}")
     # print("---")
-    while make_cut(routers): pass
     print_path(shortest_path(routers, routers[13], routers[1]))
+    print(routing_tables(routers))
 
