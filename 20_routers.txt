@@ -1,0 +1,138 @@
+You are router A.
+You are connected to router C with path weight 2.
+You are connected to router K with path weight 6.
+You are connected to router P with path weight 1.
+
+
+
+You are router B.
+You are connected to router C with path weight 6.
+You are connected to router K with path weight 6.
+You are connected to router P with path weight 5.
+
+
+
+You are router C.
+You are connected to router A with path weight 2.
+You are connected to router B with path weight 6.
+You are connected to router K with path weight 4.
+
+
+
+You are router D.
+You are connected to router E with path weight 5.
+You are connected to router G with path weight 5.
+You are connected to router P with path weight 8.
+
+
+
+You are router E.
+You are connected to router D with path weight 5.
+You are connected to router G with path weight 4.
+You are connected to router R with path weight 5.
+
+
+
+You are router F.
+You are connected to router G with path weight 4.
+You are connected to router N with path weight 7.
+You are connected to router R with path weight 4.
+
+
+
+You are router G.
+You are connected to router D with path weight 5.
+You are connected to router E with path weight 4.
+You are connected to router F with path weight 4.
+
+
+
+You are router H.
+You are connected to router N with path weight 2.
+You are connected to router R with path weight 5.
+You are connected to router T with path weight 8.
+
+
+
+You are router I.
+You are connected to router L with path weight 5.
+You are connected to router N with path weight 3.
+You are connected to router T with path weight 6.
+
+
+
+You are router J.
+You are connected to router L with path weight 4.
+You are connected to router O with path weight 4.
+You are connected to router T with path weight 3.
+
+
+
+You are router K.
+You are connected to router A with path weight 6.
+You are connected to router B with path weight 6.
+You are connected to router C with path weight 4.
+
+
+
+You are router L.
+You are connected to router I with path weight 5.
+You are connected to router J with path weight 4.
+You are connected to router O with path weight 6.
+
+
+
+You are router M.
+You are connected to router O with path weight 2.
+You are connected to router Q with path weight 4.
+You are connected to router S with path weight 7.
+
+
+
+You are router N.
+You are connected to router F with path weight 7.
+You are connected to router H with path weight 2.
+You are connected to router I with path weight 3.
+
+
+
+You are router O.
+You are connected to router J with path weight 4.
+You are connected to router L with path weight 6.
+You are connected to router M with path weight 2.
+
+
+
+You are router P.
+You are connected to router A with path weight 1.
+You are connected to router B with path weight 5.
+You are connected to router D with path weight 8.
+
+
+
+You are router Q.
+You are connected to router M with path weight 4.
+You are connected to router S with path weight 3.
+
+
+
+You are router R.
+You are connected to router E with path weight 5.
+You are connected to router F with path weight 4.
+You are connected to router H with path weight 5.
+
+
+
+You are router S.
+You are connected to router M with path weight 7.
+You are connected to router Q with path weight 3.
+
+
+
+You are router T.
+You are connected to router H with path weight 8.
+You are connected to router I with path weight 6.
+You are connected to router J with path weight 3.
+
+
+
